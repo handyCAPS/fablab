@@ -1,0 +1,143 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "normalize";
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	font-size: $fontBase;
+	font-family: $bodyFont;
+	line-height: 1.34;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headerFont;
+}
+
+a {
+	color: $linkColor;
+	text-decoration: none;
+}
+
+p:first-of-type {
+	margin-top: 0;
+}
+
+#outerWrap {
+	width: 100%;
+}
+
+#bgImage {
+	@include pie-clearfix;
+	width: 100%;
+	position: fixed;
+	z-index: -999;
+		img {
+			width: 100%;
+		}
+}
+
+header {
+	@include pie-clearfix;
+		nav {
+			background-color: $black;
+			width: 100%;
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+						li {
+							float: left;
+							margin: $step2 + em 0;
+							padding: $step-2 + em $step2 + em;
+							background-color: $altdarkColor;
+								a {
+									text-decoration: none;
+									color: $white;
+									font-size: $altstep1 + em;
+									text-shadow: 0.6px 0.6px 0px #000000;
+									transition: color 0.36s ease 0.2s;
+										&:hover {
+											color: $lightColor;
+										}
+								}
+						}
+				}
+		}
+}
+
+#logoWrap {
+	float: right;
+	display: inline-block;
+		h1 {
+			font-size: $step3 + em;
+			color: $thirdmiddleColor;
+			padding: $step-2 + em $step3 + em $step-2 + em $step-1 + em;
+			background-color: $altmiddleColorOverlay;
+			border-radius: $bradius 0 0 $bradius;
+			text-shadow: 1.14px 0.6px 0px lighten($thirdlightColor, 24);
+		}
+}
+
+#contentWrap {
+	@include pie-clearfix;
+	width: 100%
+}
+
+#sideBarLeft {
+	float: left;
+	width: 16%;
+	padding: $step1 + em;
+	margin: $step1 + em $step2 + em;
+	background-color: $altdarkColorOverlay;
+	color: $white;
+	border-radius: $bradius;
+}
+
+#sideBarRight {
+	float: right;
+	width: 20%;
+	padding: $step1 + em;
+	margin: $step1 + em $step1 + em $step1 + em $step-1 + em;
+	background-color: $altdarkColorOverlay;
+	color: $white;
+	border-radius: $bradius;
+}
+
+#mainContent {
+	float: left;
+	width: 42%;
+	padding: $step1 + em;
+	margin: $step1 + em $step2 + em;
+	background-color: $altdarkColorOverlay;
+	color: $white;
+	border-radius: $bradius;	
+		h2 {
+			margin-top: 0;
+		}
+}
+
+#actionCall {
+	float: right;
+	background-color: $altlightColorOverlay;
+	padding: $step-1 + em $step1 + em;
+	font-size: $step2 + em;
+	border-radius: $bradius;
+	display: inline-block;
+	text-transform: uppercase;
+	color: $white;
+	box-shadow: $step3 + px $step3 + px 0px 0px $darkColorOverlay;
+		a {
+
+		}
+}
