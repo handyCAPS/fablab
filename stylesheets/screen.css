@@ -252,7 +252,7 @@ figure {
  */
 /* line 253, ../sass/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -449,7 +449,7 @@ p:first-of-type {
   position: fixed;
   z-index: -999;
 }
-/* line 38, ../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #bgImage:after {
   content: "";
   display: table;
@@ -464,7 +464,7 @@ p:first-of-type {
 header {
   *zoom: 1;
 }
-/* line 38, ../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 header:after {
   content: "";
   display: table;
@@ -493,7 +493,7 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 1.353em;
-  text-shadow: 0.6px 0.6px 0px black;
+  text-shadow: 0.6px 0.6px 0px #000000;
   transition: color 0.36s ease 0.2s;
 }
 /* line 70, ../sass/screen.scss */
@@ -521,7 +521,7 @@ header nav ul li a:hover {
   *zoom: 1;
   width: 100%;
 }
-/* line 38, ../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #contentWrap:after {
   content: "";
   display: table;
@@ -558,9 +558,17 @@ header nav ul li a:hover {
 /* line 117, ../sass/screen.scss */
 #sideBarLeft ul li a {
   color: white;
+  display: inline-block;
+  width: 100%;
+  text-shadow: 0.6px 0.6px 0px black;
+  transition: color 0.36s ease 0.2s;
+}
+/* line 123, ../sass/screen.scss */
+#sideBarLeft ul li a:hover {
+  color: #8abf78;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #sideBarRight {
   float: right;
   width: 20%;
@@ -571,7 +579,7 @@ header nav ul li a:hover {
   border-radius: 4.2358px;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 #mainContent {
   float: left;
   width: 42%;
@@ -581,12 +589,19 @@ header nav ul li a:hover {
   color: white;
   border-radius: 4.2358px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #mainContent h2 {
   margin-top: 0;
+  color: white;
+  text-shadow: 0.6px 0.6px 0px black;
+  transition: color 0.36s ease 0.2s;
+}
+/* line 154, ../sass/screen.scss */
+#mainContent h2:hover {
+  color: #8abf78;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #actionCall {
   float: right;
   background-color: rgba(178, 201, 110, 0.7);
@@ -599,7 +614,23 @@ header nav ul li a:hover {
   box-shadow: 2.61792px 2.61792px 0px 0px rgba(41, 49, 38, 0.7);
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .post footer {
   font-size: 0.61805em;
+}
+
+/* line 179, ../sass/screen.scss */
+#aknowledgement {
+  position: relative;
+  display: inline-block;
+  bottom: 0.61805em;
+  left: 1.618rem;
+  background-color: rgba(107, 119, 70, 0.7);
+  padding: 0.23608em 0.61805em;
+  border-radius: 4.2358px;
+  font-size: 0.83622em;
+}
+/* line 188, ../sass/screen.scss */
+#aknowledgement a {
+  text-shadow: 0.6px 0.6px 0px black;
 }

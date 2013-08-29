@@ -20,8 +20,8 @@
 			'description'	=> 'De linker sidebar',
 			'before_widget'	=> '<div class="widgets">',
 			'after_widget'	=> "</div>",
-			'before_title'	=> '<a href="#"><h3 class="column_title">',
-			'after_title'	=> "</h3></a>"
+			'before_title'	=> '<h3 class="column_title">',
+			'after_title'	=> "</h3>"
 			);
 
 		register_sidebar($args);

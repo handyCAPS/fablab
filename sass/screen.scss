@@ -116,6 +116,13 @@ header {
 					padding: $step-2 + em $step1 + em $step-2 + em 0;
 						a {
 							color: $white;
+							display: inline-block;
+							width: 100%;
+							text-shadow: 0.6px 0.6px 0px $black;
+							transition: color 0.36s ease 0.2s;
+								&:hover {
+									color: $lightColor;
+								}
 						}
 				}
 		}
@@ -141,6 +148,12 @@ header {
 	border-radius: $bradius;	
 		h2 {
 			margin-top: 0;
+			color: $white;
+			text-shadow: 0.6px 0.6px 0px $black;
+			transition: color 0.36s ease 0.2s;
+				&:hover {
+					color: $lightColor;
+				}
 		}
 }
 
@@ -161,4 +174,18 @@ header {
 
 .post footer {
 	font-size: $step-1 + em;
+}
+
+#aknowledgement {
+	position: relative;
+	display: inline-block;
+	bottom: $step-1 + em;
+	left: $step2 + rem;
+	background-color: $middleColorOverlay;
+	padding: $step-3 + em $step-1 + em;
+	border-radius: $bradius;
+	font-size: $altstep-1 + em;
+		a {
+			text-shadow: 0.6px 0.6px 0px $black;
+		}
 }
