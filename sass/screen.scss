@@ -102,6 +102,23 @@ header {
 	background-color: $altdarkColorOverlay;
 	color: $white;
 	border-radius: $bradius;
+		h3 {
+			margin-top: 0;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+				li {
+					width: 100%;
+					background-color: $middleColor;
+					margin: $step-1 + em 0;
+					text-align: right;
+					padding: $step-2 + em $step1 + em $step-2 + em 0;
+						a {
+							color: $white;
+						}
+				}
+		}
 }
 
 #sideBarRight {
@@ -140,4 +157,8 @@ header {
 		a {
 
 		}
+}
+
+.post footer {
+	font-size: $step-1 + em;
 }

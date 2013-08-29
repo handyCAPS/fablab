@@ -7,7 +7,7 @@ $hue1: 105;
 $hue2: $hue1 - 30;
 $hue3: $hue2 - 180;
 
-$lightSat: 56%;
+$lightSat: 36%;
 $middleSat: 26%;
 $darkSat: 12%;
 
@@ -49,7 +49,7 @@ $thirdmiddleColorOverlay: hsla($hue3, $thirdmiddleSat, 37%, $overlay1);
 $thirddarkColor: hsl($hue3, $thirddarkSat, 17%);
 $thirddarkColorOverlay: hsla($hue3, $thirddarkSat, 17%, $overlay2);
 
-$linkColor: $middleColor;
+$linkColor: $lightColor;
 $headerColor: $altdarkColor;
 
 $white: #FFFFFF;
