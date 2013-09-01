@@ -60,7 +60,11 @@ header {
 							float: left;
 							margin: $step2 + em 0;
 							padding: $step-2 + em $step2 + em;
+							padding-left: 0;
 							background-color: $altdarkColor;
+								&:first-of-type {
+									padding-left: $step2 + em;
+								}
 								a {
 									text-decoration: none;
 									color: $white;
@@ -131,11 +135,19 @@ header {
 #sideBarRight {
 	float: right;
 	width: 20%;
-	padding: $step1 + em;
+	padding: 0 $step1 + em $step1 + em;
 	margin: $step1 + em $step1 + em $step1 + em $step-1 + em;
 	background-color: $altdarkColorOverlay;
 	color: $white;
 	border-radius: $bradius;
+		img {
+			width: 100%;
+			margin-top: 0;
+		}
+		iframe {
+			width: 100%;
+			height: 161px;
+		}
 }
 
 #mainContent {
@@ -154,6 +166,13 @@ header {
 				&:hover {
 					color: $lightColor;
 				}
+		}
+		img {
+			width: 100%;
+			margin-top: 0;
+		}
+		iframe {
+			width: 100%;
 		}
 }
 

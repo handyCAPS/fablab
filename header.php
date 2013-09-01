@@ -4,13 +4,17 @@
 	<title>
 			<?php
 				if (is_home() && !is_page()){
-				bloginfo('name'); echo " | "; the_title();
+				bloginfo('name'); 
+				echo " | "; 
+				wp_title();
 				}
 				elseif (is_home() && is_page()) {
-				bloginfo('name'); wp_title( ' | ', true, 'left' );
+				bloginfo('name'); 
+				wp_title( ' | ', true, 'left' );
 				}	
 				else {
-				wp_title( ' | ', true, 'right' );	bloginfo('name');
+				wp_title( ' | ', true, 'right' );	
+				bloginfo('name');
 				}
 			?>
 	</title>

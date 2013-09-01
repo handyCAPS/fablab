@@ -5,8 +5,7 @@
 			<article <?php post_class(); ?>>
 
 				<?php 
-				$queryfront = new WP_Query('category_name=frontpage');
-				if($queryfront->have_posts()) : while($queryfront->have_posts()): $queryfront->the_post(); ?>
+				if(have_posts()) : while(have_posts()): the_post(); ?>
 	
 				<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 				<footer>Gepubliceerd op <?php the_date(); ?> door <?php the_author_posts_link(); ?></footer>
@@ -21,12 +20,6 @@
 				<p>Helaas, niets gevonden ...</p>
 				<?php endif; ?>
 			</article>
-
-			<a href="#">
-				<div id="actionCall">
-					Ontdek
-				</div><!--  end actionCall  -->
-			</a>
 
 		</div><!--  end mainContent  -->
 		<aside id="sideBarRight" class="sidebar">
